@@ -24,8 +24,8 @@ public class Aula01Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Pedido pedido = new Pedido(1034, 150.0, 20.0);
-		System.out.println("Codigo:" + pedido.getCodigo());
-		 System.out.println(servico.total(pedido));
+		System.out.println("Codigo do pedido:" + pedido.getCodigo());
+		 System.out.println("Valor total: R$ " + servico.total(pedido));
 		
 		
 	}
